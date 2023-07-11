@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>ICRYPEX.Net</Title>
+    <Version>0.0.1</Version>
+    <Authors>Mehmet Emin KARADAĞ</Authors>
+    <Company>Mehmet Emin KARADAĞ</Company>
+    <Description>ICRYPEX borsasında al-sat ve bakiye görüntüleme gibi işlemlerin kolayca yapılabilmesini sağlayan .NET kütüphanesidir.</Description>
+    <Copyright>Tüm hakları saklıdır.</Copyright>
+    <PackageProjectUrl>https://github.com/emin-karadag/ICRYPEX.Net</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/emin-karadag/ICRYPEX.Net</RepositoryUrl>
+    <PackageTags>icrypex,exchange,crypto,cryptocurrency,bitcoin,ethereum,avax,blokzincir,blockchain,trade,bot</PackageTags>
+    <PackageReleaseNotes>ICRYPEX.Net projesi oluşturuldu.</PackageReleaseNotes>
+    <PackageIcon>Icrypex-Logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Business\" />
+    <Folder Include="Core\" />
+    <Folder Include="Entity\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Icrypex-Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
