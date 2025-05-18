@@ -1,42 +1,36 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>ICRYPEX.Net</Title>
-    <Version>0.0.1</Version>
+    
+    <!-- NuGet Package Configuration -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>ICRYPEX.Net</PackageId>
+    <Version>1.0.0</Version>
     <Authors>Mehmet Emin KARADAĞ</Authors>
     <Company>Mehmet Emin KARADAĞ</Company>
-    <Description>ICRYPEX borsasında al-sat ve bakiye görüntüleme gibi işlemlerin kolayca yapılabilmesini sağlayan .NET kütüphanesidir.</Description>
-    <Copyright>Tüm hakları saklıdır.</Copyright>
+    <Description>ICRYPEX borsası için geliştirilmiş .NET kütüphanesidir.</Description>
+    <PackageTags>icrypex;crypto;exchange;bitcoin;cryptocurrency;kripto</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/emin-karadag/ICRYPEX.Net</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/emin-karadag/ICRYPEX.Net</RepositoryUrl>
-    <PackageTags>icrypex,exchange,crypto,cryptocurrency,bitcoin,ethereum,avax,blokzincir,blockchain,trade,bot</PackageTags>
-    <PackageReleaseNotes>ICRYPEX.Net projesi oluşturuldu.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/emin-karadag/ICRYPEX.Net.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageIcon>Icrypex-Logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Tüm hakları saklıdır.</Copyright>
+    <PackageReleaseNotes>Pubic API entegrasyonları yapıldı.
+- Exchange Info
+- Tickers
+- Order Book
+- Last Trades
+- K-Line Data</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Business\" />
-    <Folder Include="Core\" />
-    <Folder Include="Entity\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Icrypex-Logo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <None Include="Icrypex-Logo.png" Pack="true" PackagePath="\" />
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
